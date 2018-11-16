@@ -11,11 +11,11 @@ public class Todo {
 		//this is a constructor
 	}
 
-	/*public Todo(String name) {
+	public Todo(String name) {
 		super();
 		this.name = name;
 	}
-*/
+
 	public String getName() {
 		return name;
 	}

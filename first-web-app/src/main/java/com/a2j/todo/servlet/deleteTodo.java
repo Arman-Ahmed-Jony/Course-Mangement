@@ -38,7 +38,7 @@ public class deleteTodo extends HttpServlet {
 			throws ServletException, IOException {
 		// logs a debug message
 		logger.debug("deleteTodo servelet doGet methode is executed");
-		TodoService.deleteTodos(new Todo(request.getParameter("todo"),request.getParameter("price")));
+		TodoService.deleteTodos(new Todo(request.getParameter("todo")));
 		response.sendRedirect("/todo.do");
 	}
 

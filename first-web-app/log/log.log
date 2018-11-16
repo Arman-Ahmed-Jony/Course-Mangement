@@ -2355,3 +2355,60 @@
 2018-11-16 19:08:15 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=null] elements are deleted
 2018-11-16 19:08:15 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
 2018-11-16 19:08:15 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:26:54 [DEBUG] [http-bio-9966-exec-1] -com.a2j.login.servlet.LoginServlet :36. doGet -Get requset to login.do default servlet
+2018-11-16 19:27:01 [DEBUG] [http-bio-9966-exec-4] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:27:01 [DEBUG] [http-bio-9966-exec-4] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:27:04 [DEBUG] [http-bio-9966-exec-8] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:27:04 [DEBUG] [http-bio-9966-exec-8] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=null] elements are deleted
+2018-11-16 19:27:04 [DEBUG] [http-bio-9966-exec-9] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:27:04 [DEBUG] [http-bio-9966-exec-9] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=null] elements are deleted
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=null] elements are deleted
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=null] elements are deleted
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=null] elements are deleted
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:27:05 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:28:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:05 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn web Application], Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:28:07 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:28:07 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=learn web Application] elements are deleted
+2018-11-16 19:28:07 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:07 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn Spring MVC], Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=learn Spring MVC] elements are deleted
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=learn Spring rest service], Todo [name=jsp servlet]]
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=learn Spring rest service] elements are deleted
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-7] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:08 [DEBUG] [http-bio-9966-exec-7] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=jsp servlet]]
+2018-11-16 19:28:11 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :47. doPost -todo servelet doPost methode is executed
+2018-11-16 19:28:11 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :48. doPost -adsfdasf
+2018-11-16 19:28:11 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :28. addTodos -adsfdasf elements are added
+2018-11-16 19:28:11 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:11 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=jsp servlet], Todo [name=adsfdasf]]
+2018-11-16 19:28:18 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :47. doPost -todo servelet doPost methode is executed
+2018-11-16 19:28:18 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :48. doPost -amar name johnny
+2018-11-16 19:28:18 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :28. addTodos -amar name johnny elements are added
+2018-11-16 19:28:18 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:18 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=jsp servlet], Todo [name=adsfdasf], Todo [name=amar name johnny]]
+2018-11-16 19:28:20 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:28:20 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=adsfdasf] elements are deleted
+2018-11-16 19:28:20 [DEBUG] [http-bio-9966-exec-10] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:20 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=jsp servlet], Todo [name=amar name johnny]]
+2018-11-16 19:28:21 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.deleteTodo :40. doGet -deleteTodo servelet doGet methode is executed
+2018-11-16 19:28:21 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :33. deleteTodos -Todo [name=jsp servlet] elements are deleted
+2018-11-16 19:28:21 [DEBUG] [http-bio-9966-exec-3] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:21 [DEBUG] [http-bio-9966-exec-3] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=amar name johnny]]
+2018-11-16 19:28:48 [DEBUG] [http-bio-9966-exec-8] -com.a2j.todo.servlet.TodoServlet :39. doGet -todo servelet doGet methode is executed
+2018-11-16 19:28:48 [DEBUG] [http-bio-9966-exec-8] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Todo [name=amar name johnny]]

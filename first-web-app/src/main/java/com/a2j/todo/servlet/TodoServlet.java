@@ -47,9 +47,9 @@ public class TodoServlet extends HttpServlet {
 		logger.debug("todo servelet doPost methode is executed");
 		logger.debug(request.getParameter("newTodo").toString());
 		String newTodo = request.getParameter("newTodo");
-		String price = request.getParameter("price");
-		if (newTodo != "" && price!="")
-			TodoService.addTodos(newTodo, price);
+		//String price = request.getParameter("price");
+		if (newTodo != "")
+			TodoService.addTodos(newTodo);
 
 		response.sendRedirect("/todo.do");
 		
