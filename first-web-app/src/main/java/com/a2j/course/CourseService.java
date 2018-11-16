@@ -1,4 +1,4 @@
-package com.a2j.todo;
+package com.a2j.course;
 
 import java.util.ArrayList;
 import java.util.List;

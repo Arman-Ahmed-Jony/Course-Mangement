@@ -108,12 +108,12 @@ footer {
 					<th>price</th>
 					<th>Options</th>
 				</tr>
-				<c:forEach items="${todos}" var="todo">
+				<c:forEach items="${courses}" var="course">
 					<tr>
-						<td>${todo.name}</td>
-						<td>${todo.price}</td>
+						<td>${course.name}</td>
+						<td>${course.price}</td>
 						<td><a
-							href="deleteTodo.do?name=${todo.name}&price=${todo.price}"
+							href="deleteCourse.do?name=${course.name}&price=${course.price}"
 							class="btn">Delete</a></td>
 					</tr>
 				</c:forEach>
@@ -122,7 +122,7 @@ footer {
 	</div>
 
 	<div><%=date%></div>
-	<form action="\todo.do" method="post" >
+	<form action="\course.do" method="post" >
 		<input type="text" name="newTodo"> <input type="number"
 			name="price"> <input type="submit">
 	</form>

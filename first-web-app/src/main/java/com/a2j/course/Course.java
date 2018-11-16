@@ -1,4 +1,4 @@
-package com.a2j.todo;
+package com.a2j.course;
 
 public class Course {
 	private String name;

@@ -26,6 +26,7 @@ import com.a2j.login.LoginService;
 public class LoginServlet extends HttpServlet {
 
 	final static Logger logger = Logger.getLogger(LoginServlet.class);
+	
 	private LoginService userValidationService = new LoginService();
 	// private CourseService CourseService = new CourseService();
 
@@ -53,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 			 * in a servlet every request is new. so if we set an attribute in request, it
 			 * will be vanished in other servlet
 			 */
-			response.sendRedirect("/todo.do");
+			response.sendRedirect("/course.do");
 
 		} else {
 			request.setAttribute("passwordError", name + " is not registered");

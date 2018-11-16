@@ -1,4 +1,4 @@
-package com.a2j.todo.servlet;
+package com.a2j.course.servlet;
 /*
  * this is a Login servlet.
  * 1. we are using @WebServlet anotation where we can use urlPatterns to set a url pattern to execute this servlet
@@ -11,7 +11,6 @@ package com.a2j.todo.servlet;
  * */
 
 
-import com.a2j.todo.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -23,9 +22,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
+import com.a2j.course.*;
 import com.a2j.login.LoginService;
-import com.a2j.todo.Course;
-import com.a2j.todo.CourseService;
 
 @WebServlet(urlPatterns = "/deleteCourse.do")
 public class deleteCourse extends HttpServlet {
@@ -39,7 +37,7 @@ public class deleteCourse extends HttpServlet {
 		// logs a debug message
 		logger.debug("deleteCourse servelet doGet methode is executed");
 		CourseService.deleteTodos(new Course(request.getParameter("name"),request.getParameter("price")));
-		response.sendRedirect("/todo.do");
+		response.sendRedirect("/course.do");
 	}
 
 
