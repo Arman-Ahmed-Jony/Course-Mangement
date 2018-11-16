@@ -23,21 +23,21 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 
 import com.a2j.login.LoginService;
-import com.a2j.todo.Todo;
-import com.a2j.todo.TodoService;
+import com.a2j.todo.Course;
+import com.a2j.todo.CourseService;
 
 @WebServlet(urlPatterns = "/todo.do")
 public class TodoServlet extends HttpServlet {
 	final static Logger logger = Logger.getLogger(TodoServlet.class);
 
-	private TodoService TodoService = new TodoService();
+	private CourseService CourseService = new CourseService();
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// logs a debug message
 		logger.debug("todo servelet doGet methode is executed");
-		request.setAttribute("todos", TodoService.retriveTodos());
+		request.setAttribute("todos", CourseService.retriveTodos());
 		request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request, response);
 	}
 
@@ -47,14 +47,14 @@ public class TodoServlet extends HttpServlet {
 		logger.debug("todo servelet doPost methode is executed");
 		logger.debug(request.getParameter("newTodo").toString());
 		String newTodo = request.getParameter("newTodo");
-		//String price = request.getParameter("price");
-		if (newTodo != "")
-			TodoService.addTodos(newTodo);
+		String price = request.getParameter("price");
+		if (newTodo != ""&& price!="")
+			CourseService.addTodos(newTodo,price);
 
 		response.sendRedirect("/todo.do");
 		
 		/*
-		 * request.setAttribute("todos", TodoService.retriveTodos());
+		 * request.setAttribute("todos", CourseService.retriveTodos());
 		 * request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request,
 		 * response);
 		 */

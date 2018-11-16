@@ -24,21 +24,21 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 
 import com.a2j.login.LoginService;
-import com.a2j.todo.Todo;
-import com.a2j.todo.TodoService;
+import com.a2j.todo.Course;
+import com.a2j.todo.CourseService;
 
-@WebServlet(urlPatterns = "/deleteTodo.do")
-public class deleteTodo extends HttpServlet {
-	final static Logger logger = Logger.getLogger(deleteTodo.class);
+@WebServlet(urlPatterns = "/deleteCourse.do")
+public class deleteCourse extends HttpServlet {
+	final static Logger logger = Logger.getLogger(deleteCourse.class);
 
-	private TodoService TodoService = new TodoService();
+	private CourseService CourseService = new CourseService();
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// logs a debug message
-		logger.debug("deleteTodo servelet doGet methode is executed");
-		TodoService.deleteTodos(new Todo(request.getParameter("todo")));
+		logger.debug("deleteCourse servelet doGet methode is executed");
+		CourseService.deleteTodos(new Course(request.getParameter("name"),request.getParameter("price")));
 		response.sendRedirect("/todo.do");
 	}
 

@@ -4,7 +4,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%
-
 	Date date = new Date();
 %>
 <!DOCTYPE html>
@@ -17,7 +16,7 @@
 <!-- <meta http-equiv="refresh" content="5"> -->
 <link href="webjars/bootstrap/4.0.0/css/bootstrap.min.css"
 	rel="stylesheet">
-<title>Todo Page</title>
+<title>Course Page</title>
 
 <style type="text/css">
 body {
@@ -100,36 +99,32 @@ footer {
 	</ul>
 	<h1>Hello ${name}</h1>
 	<div>
-		your todo list are given bellow:<br>
+		your course list are given bellow:<br>
 		<div>
 			<table>
 
 				<tr>
 					<th>Course Name</th>
-					
+					<th>price</th>
 					<th>Options</th>
 				</tr>
 				<c:forEach items="${todos}" var="todo">
 					<tr>
 						<td>${todo.name}</td>
-						<%-- <td>${todo.price}</td> --%>
+						<td>${todo.price}</td>
 						<td><a
-							href="deleteTodo.do?todo=${todo.name}"
+							href="deleteTodo.do?name=${todo.name}&price=${todo.price}"
 							class="btn">Delete</a></td>
 					</tr>
 				</c:forEach>
 			</table>
-
-
 		</div>
 	</div>
 
 	<div><%=date%></div>
-	<form action="\todo.do" method="post">
-		<input type="text" name="newTodo">
-		<!-- <input type="text"
-			name="price"> -->
-		<input type="submit">
+	<form action="\todo.do" method="post" >
+		<input type="text" name="newTodo"> <input type="number"
+			name="price"> <input type="submit">
 	</form>
 
 

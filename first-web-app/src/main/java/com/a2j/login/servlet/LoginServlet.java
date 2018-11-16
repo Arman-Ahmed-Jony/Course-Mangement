@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 
 	final static Logger logger = Logger.getLogger(LoginServlet.class);
 	private LoginService userValidationService = new LoginService();
-	// private TodoService TodoService = new TodoService();
+	// private CourseService CourseService = new CourseService();
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)

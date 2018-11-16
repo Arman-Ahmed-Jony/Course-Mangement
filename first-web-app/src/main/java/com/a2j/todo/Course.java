@@ -1,6 +1,6 @@
 package com.a2j.todo;
 
-public class Todo {
+public class Course {
 	private String name;
 	private String price;
 
@@ -10,14 +10,14 @@ public class Todo {
 	 * it has two constructor. one takes parameter as name and price.
 	 * another takes only name as the parameter 
 	 */
-	public Todo(String name, String price) {
+	public Course(String name, String price) {
 		super();
 		this.name = name;
 		this.price = price;
 		//this is a constructor
 	}
 
-	public Todo(String name) {
+	public Course(String name) {
 		super();
 		this.name = name;
 	}
@@ -40,7 +40,7 @@ public class Todo {
 
 	@Override
 	public String toString() {
-		return String.format("Todo [name=%s]", name);
+		return "Course [name=" + name + ", price=" + price + "]";
 	}
 
 	@Override
@@ -60,7 +60,7 @@ public class Todo {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Todo other = (Todo) obj;
+		Course other = (Course) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;
@@ -73,6 +73,8 @@ public class Todo {
 			return false;
 		return true;
 	}
+
+	
 	
 
 }
