@@ -4,6 +4,12 @@ public class Todo {
 	private String name;
 	private String price;
 
+	
+	/*
+	 * this class is a pojo class.
+	 * it has two constructor. one takes parameter as name and price.
+	 * another takes only name as the parameter 
+	 */
 	public Todo(String name, String price) {
 		super();
 		this.name = name;
