@@ -10,7 +10,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome to A2j server</title>
-
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- 
 <style type="text/css">
 legend {
 	text-align: center;
@@ -66,7 +68,7 @@ footer {
 	text-align: center;
 	padding: 5px;
 }
-</style>
+</style> -->
 </head>
 <body>
 	<header>
@@ -88,5 +90,7 @@ footer {
 
 
 	<footer> Copyright © a2j.com </footer>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

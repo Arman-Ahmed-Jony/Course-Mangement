@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   	<dependencies>
+  		<!-- dependency to use JavaEE -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -12,23 +13,26 @@
 			<scope>provided</scope>
 		</dependency>
 		
+		<!-- java standard tag library dependency -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+		<!-- this dependencies are for using bootstrap -->
 		<dependency>
 		<groupId>org.webjars</groupId>
 		<artifactId>bootstrap</artifactId>
-		<version>4.0.0</version>
-		
+		<version>3.3.6</version>
 		</dependency>
 		<dependency>
 		<groupId>org.webjars</groupId>
 		<artifactId>jquery</artifactId>
 		<version>1.9.1</version>
-		
 		</dependency>
+		<!-- this dependency is for logging  -->
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -50,6 +54,7 @@
 						<showWarnings>true</showWarnings>
 					</configuration>
 				</plugin>
+				<!-- tomcat7 plugin to use tomcat server  -->
 				<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>
 					<artifactId>tomcat7-maven-plugin</artifactId>

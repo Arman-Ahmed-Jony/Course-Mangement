@@ -14,11 +14,11 @@
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 <meta name="author" content="Hege Refsnes">
 <!-- <meta http-equiv="refresh" content="5"> -->
-<link href="webjars/bootstrap/4.0.0/css/bootstrap.min.css"
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 <title>Course Page</title>
 
-<style type="text/css">
+<!-- <style type="text/css">
 body {
 	background-color: #ffffff;
 }
@@ -88,48 +88,59 @@ footer {
 	padding: 5px;
 	background: black;
 }
-</style>
+</style> -->
 </head>
 <body>
-	<ul id="menu">
-		<li><a href="#">java</a></li>
-		<li><a href="#">HTML 5</a></li>
-		<li><a href="#">CSS 3</a></li>
-		<li><a href="">JavaScript</a></li>
-	</ul>
-	<h1>Hello ${name}</h1>
-	<div>
-		your course list are given bellow:<br>
-		<div>
-			<table>
-
-				<tr>
-					<th>Course Name</th>
-					<th>price</th>
-					<th>Options</th>
-				</tr>
-				<c:forEach items="${courses}" var="course">
-					<tr>
-						<td>${course.name}</td>
-						<td>${course.price}</td>
-						<td><a
-							href="deleteCourse.do?name=${course.name}&price=${course.price}"
-							class="btn">Delete</a></td>
-					</tr>
-				</c:forEach>
-			</table>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">A2J</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">java</a></li>
+				<li><a href="#">CSS 3</a></li>
+				<li><a href="#">JavaScript</a></li>
+			</ul>
 		</div>
+	</nav>
+
+
+	<div class="container" style="margin-top: 50px">
+
+		<h1>Hello ${name}</h1>
+		<div>
+			your course list are given bellow:<br>
+			<div>
+				<table class="table table-striped">
+
+					<tr>
+						<th>Course Name</th>
+						<th>price</th>
+						<th>Options</th>
+					</tr>
+					<c:forEach items="${courses}" var="course">
+						<tr>
+							<td>${course.name}</td>
+							<td>${course.price}</td>
+							<td><a
+								href="deleteCourse.do?name=${course.name}&price=${course.price}"
+								class="btn">Delete</a></td>
+						</tr>
+					</c:forEach>
+				</table>
+			</div>
+		</div>
+
+		<div><%=date%></div>
+		<form action="\course.do" method="post">
+			<input type="text" name="newTodo"> <input type="number"
+				name="price"> <input type="submit">
+		</form>
 	</div>
 
-	<div><%=date%></div>
-	<form action="\course.do" method="post" >
-		<input type="text" name="newTodo"> <input type="number"
-			name="price"> <input type="submit">
-	</form>
-
-
-	<script src="wbjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="wbjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 <footer> Copyright © a2j.com </footer>
 </html>
