@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 			 * in a servlet every request is new. so if we set an attribute in request, it
 			 * will be vanished in other servlet
 			 */
-			response.sendRedirect("/course.do");
+			response.sendRedirect("/course");
 
 		} else {
 			request.setAttribute("passwordError", name + " is not registered");

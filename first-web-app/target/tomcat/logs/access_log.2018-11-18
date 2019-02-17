@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:21 +0600] "GET / HTTP/1.1" 200 1777 http-bio-9966-exec-2 2740
+127.0.0.1 - - [18/Nov/2018:23:51:21 +0600] "GET / HTTP/1.1" 200 1777 http-bio-9966-exec-1 2740
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:21 +0600] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-9966-exec-6 110
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:21 +0600] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 200 121260 http-bio-9966-exec-4 124
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:21 +0600] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 200 36868 http-bio-9966-exec-7 180
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:22 +0600] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9966-exec-10 5
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:28 +0600] "GET /login.do?name=Arman&password=1324 HTTP/1.1" 200 1777 http-bio-9966-exec-10 5
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:51:51 +0600] "GET /login.do?name=Arman&password=sadia HTTP/1.1" 200 1777 http-bio-9966-exec-10 3
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:52:22 +0600] "GET /login.do?name=Arman&password=IUBATCSE HTTP/1.1" 200 1777 http-bio-9966-exec-10 4
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:52:45 +0600] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css.map HTTP/1.1" 200 54416 http-bio-9966-exec-10 4
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:56:58 +0600] "GET /login.do?name=Arman&password=IUBATCSE HTTP/1.1" 200 1778 http-bio-9966-exec-7 320
+0:0:0:0:0:0:0:1 - - [18/Nov/2018:23:57:25 +0600] "POST /login.do HTTP/1.1" 200 1801 http-bio-9966-exec-7 7

@@ -1,76 +1,4 @@
-<%@page import="java.util.Date"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%
-	Date date = new Date();
-%>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Welcome to A2j server</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-<!-- 
-<style type="text/css">
-legend {
-	text-align: center;
-	font-size: 25px;
-}
-
-legend, input[type=text], [type=password], select {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-input[type=submit] {
-	width: 100%;
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-input[type=submit]:hover {
-	background-color: #45a049;
-}
-
-div.forms {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 40px;
-	margin: 180PX 100PX 100PX 100Px
-}
-
-header {
-	position: fixed;
-	padding: 5px;
-	top: 0;
-	width: 100%;
-	background-color: black;
-	color: white;
-	text-align: center;
-	background-color: black;
-}
-
-footer {
-	background: black;
-	color: white;
-	text-align: center;
-	padding: 5px;
-}
-</style> -->
-</head>
-<body>
+<%@include file="commonThingsInView/header.jspf" %>
 	<header>
 		<h1>A2J website is with you to learn java</h1>
 	</header>
@@ -84,13 +12,6 @@ footer {
 				<input type="submit" value="Login" />
 			</fieldset>
 		</form>
-		<%=date%>
+		<%-- <%=date%> --%>
 	</div>
-
-
-
-	<footer> Copyright © a2j.com </footer>
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body>
-</html>
+<%@include file="commonThingsInView/footer.jspf" %>

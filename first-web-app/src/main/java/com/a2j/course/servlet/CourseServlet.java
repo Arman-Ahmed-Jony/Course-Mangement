@@ -26,7 +26,7 @@ import com.a2j.course.Course;
 import com.a2j.course.CourseService;
 import com.a2j.login.LoginService;
 
-@WebServlet(urlPatterns = "/course.do")
+@WebServlet(urlPatterns = "/course")
 public class CourseServlet extends HttpServlet {
 	final static Logger logger = Logger.getLogger(CourseServlet.class);
 
@@ -51,7 +51,7 @@ public class CourseServlet extends HttpServlet {
 		if (newTodo != ""&& price!="")
 			CourseService.addTodos(newTodo,price);
 
-		response.sendRedirect("/course.do");
+		response.sendRedirect("/course");
 		
 		/*
 		 * request.setAttribute("todos", CourseService.retriveTodos());

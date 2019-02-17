@@ -18,77 +18,15 @@
 	rel="stylesheet">
 <title>Course Page</title>
 
-<!-- <style type="text/css">
-body {
-	background-color: #ffffff;
-}
-
-h1 {
-	color: blue;
-}
-
-p {
-	color: green;
-}
-
-ul#menu li {
-	display: inline;
-}
-
-ul#menu li a {
-	background-color: black;
-	color: white;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 4px 4px 0 0;
-}
-
-ul#menu li a:hover {
-	background-color: orange;
-}
-
-table {
-	border-collapse: collapse;
+<style type="text/css">
+.footer {
+	position: absolute;
+	bottom: 0;
 	width: 100%;
+	height: 60px;
+	background-color: #222222;
 }
-
-th, td {
-	text-align: left;
-	padding: 8px;
-}
-
-tr:nth-child(even) {
-	background-color: #f2f2f2
-}
-
-th {
-	background-color: #4CAF50;
-	color: white;
-}
-
-.btn {
-	display: inline-block;
-	background-color: #f44336;
-	color: #FFFFFF;
-	padding: 14px 25px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	margin-left: 20px;
-	opacity: 0.9;
-}
-
-footer {
-	position: fixed;
-	width: 100%;
-	top: 20;
-	background: black;
-	color: white;
-	text-align: center;
-	padding: 5px;
-	background: black;
-}
-</style> -->
+</style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -112,22 +50,27 @@ footer {
 		<div>
 			your course list are given bellow:<br>
 			<div>
+				<input class="form-control" id="myInput" type="text"
+					placeholder="Search.."> <br>
 				<table class="table table-striped">
-
-					<tr>
-						<th>Course Name</th>
-						<th>price</th>
-						<th>Options</th>
-					</tr>
-					<c:forEach items="${courses}" var="course">
+					<thead>
 						<tr>
-							<td>${course.name}</td>
-							<td>${course.price}</td>
-							<td><a
-								href="deleteCourse.do?name=${course.name}&price=${course.price}"
-								class="btn">Delete</a></td>
+							<th>Course Name</th>
+							<th>price</th>
+							<th>Options</th>
 						</tr>
-					</c:forEach>
+					</thead>
+					<tbody id="myTable">
+						<c:forEach items="${courses}" var="course">
+							<tr>
+								<td>${course.name}</td>
+								<td>${course.price}</td>
+								<td><a
+									href="deleteCourse.do?name=${course.name}&price=${course.price}"
+									class="btn">Delete</a></td>
+							</tr>
+						</c:forEach>
+					</tbody>
 				</table>
 			</div>
 		</div>
@@ -141,8 +84,37 @@ footer {
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<script>
+		$(document)
+				.ready(
+						function() {
+							$("#myInput")
+									.on(
+											"keyup",
+											function() {
+												var value = $(this).val()
+														.toLowerCase();
+												$("#myTable tr")
+														.filter(
+																function() {
+																	$(this)
+																			.toggle(
+																					$(
+																							this)
+																							.text()
+																							.toLowerCase()
+																							.indexOf(
+																									value) > -1)
+																});
+											});
+						});
+	</script>
+	<footer class="footer">
+		<div style="color: #FFFFFF">Copyright © a2j.com</div>
+	</footer>
 </body>
-<footer> Copyright © a2j.com </footer>
+
 </html>
 
 
