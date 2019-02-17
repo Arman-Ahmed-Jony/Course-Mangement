@@ -2832,3 +2832,16 @@
 2019-01-26 23:48:24 [DEBUG] [http-bio-9966-exec-1] -com.a2j.login.servlet.LoginServlet :37. doGet -Get requset to login.do default servlet
 2019-01-26 23:48:46 [DEBUG] [http-bio-9966-exec-10] -com.a2j.course.servlet.CourseServlet :39. doGet -todo servelet doGet methode is executed
 2019-01-26 23:48:46 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Course [name=learn web Application, price=500], Course [name=learn Spring MVC, price=500], Course [name=learn Spring rest service, price=500], Course [name=jsp servlet, price=500]]
+2019-02-17 19:19:41 [DEBUG] [http-bio-9966-exec-2] -com.a2j.login.servlet.LoginServlet :37. doGet -Get requset to login.do default servlet
+2019-02-17 19:20:06 [DEBUG] [http-bio-9966-exec-10] -com.a2j.course.servlet.CourseServlet :39. doGet -todo servelet doGet methode is executed
+2019-02-17 19:20:06 [DEBUG] [http-bio-9966-exec-10] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Course [name=learn web Application, price=500], Course [name=learn Spring MVC, price=500], Course [name=learn Spring rest service, price=500], Course [name=jsp servlet, price=500]]
+2019-02-17 19:31:22 [DEBUG] [http-bio-9966-exec-9] -com.a2j.course.servlet.CourseServlet :39. doGet -todo servelet doGet methode is executed
+2019-02-17 19:31:22 [DEBUG] [http-bio-9966-exec-9] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Course [name=learn web Application, price=500], Course [name=learn Spring MVC, price=500], Course [name=learn Spring rest service, price=500], Course [name=jsp servlet, price=500]]
+2019-02-17 19:32:24 [DEBUG] [http-bio-9966-exec-2] -com.a2j.login.servlet.LoginServlet :38. doGet -Get requset to login.do default servlet
+2019-02-17 19:32:29 [DEBUG] [http-bio-9966-exec-5] -com.a2j.course.servlet.CourseServlet :39. doGet -todo servelet doGet methode is executed
+2019-02-17 19:32:29 [DEBUG] [http-bio-9966-exec-5] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Course [name=learn web Application, price=500], Course [name=learn Spring MVC, price=500], Course [name=learn Spring rest service, price=500], Course [name=jsp servlet, price=500]]
+2019-02-17 19:32:52 [DEBUG] [http-bio-9966-exec-6] -com.a2j.course.servlet.CourseServlet :47. doPost -todo servelet doPost methode is executed
+2019-02-17 19:32:52 [DEBUG] [http-bio-9966-exec-6] -com.a2j.course.servlet.CourseServlet :48. doPost -rest Full API
+2019-02-17 19:32:52 [DEBUG] [http-bio-9966-exec-6] -com.a2j.login.servlet.LoginServlet :28. addTodos -rest Full API elements are added
+2019-02-17 19:32:52 [DEBUG] [http-bio-9966-exec-8] -com.a2j.course.servlet.CourseServlet :39. doGet -todo servelet doGet methode is executed
+2019-02-17 19:32:52 [DEBUG] [http-bio-9966-exec-8] -com.a2j.login.servlet.LoginServlet :21. retriveTodos -[Course [name=learn web Application, price=500], Course [name=learn Spring MVC, price=500], Course [name=learn Spring rest service, price=500], Course [name=jsp servlet, price=500], Course [name=rest Full API, price=500]]

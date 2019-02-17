@@ -66,7 +66,7 @@
 								<td>${course.name}</td>
 								<td>${course.price}</td>
 								<td><a
-									href="deleteCourse.do?name=${course.name}&price=${course.price}"
+									href="deleteCourse?name=${course.name}&price=${course.price}"
 									class="btn">Delete</a></td>
 							</tr>
 						</c:forEach>
@@ -76,7 +76,7 @@
 		</div>
 
 		<div><%=date%></div>
-		<form action="\course.do" method="post">
+		<form action="\course" method="post">
 			<input type="text" name="newTodo"> <input type="number"
 				name="price"> <input type="submit">
 		</form>

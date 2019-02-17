@@ -10,9 +10,7 @@ package com.a2j.course.servlet;
  * 
  * */
 
-
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,10 +20,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import com.a2j.course.*;
-import com.a2j.login.LoginService;
+import com.a2j.course.Course;
+import com.a2j.course.CourseService;
 
-@WebServlet(urlPatterns = "/deleteCourse.do")
+@WebServlet(urlPatterns = "/deleteCourse")
 public class deleteCourse extends HttpServlet {
 	final static Logger logger = Logger.getLogger(deleteCourse.class);
 
@@ -36,9 +34,8 @@ public class deleteCourse extends HttpServlet {
 			throws ServletException, IOException {
 		// logs a debug message
 		logger.debug("deleteCourse servelet doGet methode is executed");
-		CourseService.deleteTodos(new Course(request.getParameter("name"),request.getParameter("price")));
-		response.sendRedirect("/course.do");
+		CourseService.deleteTodos(new Course(request.getParameter("name"), request.getParameter("price")));
+		response.sendRedirect("/course");
 	}
-
 
 }

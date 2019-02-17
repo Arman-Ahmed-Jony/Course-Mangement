@@ -4,7 +4,7 @@
 	</header>
 	<h1>${passwordError}</h1>
 	<div class="forms">
-		<form action="/login.do" method="post">
+		<form action="/login" method="post">
 			<fieldset>
 				<legend>Login</legend>
 				<input type="text" name="name" placeholder="Enter Your Name" /> <input

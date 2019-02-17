@@ -12,6 +12,7 @@
 package com.a2j.login.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,11 +23,11 @@ import org.apache.log4j.Logger;
 
 import com.a2j.login.LoginService;
 
-@WebServlet(urlPatterns = "/login.do")
+@WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
 
 	final static Logger logger = Logger.getLogger(LoginServlet.class);
-	
+
 	private LoginService userValidationService = new LoginService();
 	// private CourseService CourseService = new CourseService();
 
