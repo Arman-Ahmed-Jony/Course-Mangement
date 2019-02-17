@@ -1,6 +1,6 @@
-com\a2j\course\Course.class
 com\a2j\course\servlet\deleteCourse.class
-com\a2j\login\servlet\LoginServlet.class
 com\a2j\course\servlet\CourseServlet.class
 com\a2j\login\LoginService.class
+com\a2j\course\Course.class
+com\a2j\login\servlet\LoginServlet.class
 com\a2j\course\CourseService.class
