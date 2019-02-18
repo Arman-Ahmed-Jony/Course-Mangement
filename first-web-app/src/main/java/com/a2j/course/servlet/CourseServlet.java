@@ -12,21 +12,17 @@
 package com.a2j.course.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import com.a2j.course.Course;
 import com.a2j.course.CourseService;
-import com.a2j.login.LoginService;
 
-@WebServlet(urlPatterns = "/course")
+//@WebServlet(urlPatterns = "/course")
 public class CourseServlet extends HttpServlet {
 	final static Logger logger = Logger.getLogger(CourseServlet.class);
 
@@ -37,7 +33,7 @@ public class CourseServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// logs a debug message
 		logger.debug("todo servelet doGet methode is executed");
-		request.setAttribute("courses", CourseService.retriveTodos());
+		request.setAttribute("courses", CourseService.retriveCourses());
 		request.getRequestDispatcher("/WEB-INF/views/course.jsp").forward(request, response);
 	}
 
@@ -48,11 +44,11 @@ public class CourseServlet extends HttpServlet {
 		logger.debug(request.getParameter("newTodo").toString());
 		String newTodo = request.getParameter("newTodo");
 		String price = request.getParameter("price");
-		if (newTodo != ""&& price!="")
-			CourseService.addTodos(newTodo,price);
+		if (newTodo != "" && price != "")
+			CourseService.addTodos(newTodo, price);
 
 		response.sendRedirect("/course");
-		
+
 		/*
 		 * request.setAttribute("todos", CourseService.retriveTodos());
 		 * request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request,

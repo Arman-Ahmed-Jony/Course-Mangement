@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
-import com.a2j.login.servlet.LoginServlet;
-
+@Service
 public class CourseService {
-	final static Logger logger = Logger.getLogger(LoginServlet.class);
+	final static Logger logger = Logger.getLogger(CourseService.class);
 	private static List<Course> courses = new ArrayList<Course>();
 	static {
 		courses.add(new Course("learn web Application", "500"));
@@ -17,7 +17,7 @@ public class CourseService {
 		courses.add(new Course("jsp servlet", "500"));
 	}
 
-	public List<Course> retriveTodos() {
+	public List<Course> retriveCourses() {
 		logger.debug(courses);
 		return courses;
 	}
